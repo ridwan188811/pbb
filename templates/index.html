@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBB by Muhamad Ridwan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>PBB Calculator</h1>
+        <div class="branding">PBB by Muhamad Ridwan</div>
+    </header>
+    <main>
+        <form method="post">
+            <label for="num1">Angka Pertama:</label>
+            <input type="number" id="num1" name="num1" required>
+            <label for="num2">Angka Kedua:</label>
+            <input type="number" id="num2" name="num2" required>
+            <button type="submit">Hitung PBB</button>
+        </form>
+        
+        {% if result is not none %}
+            <div class="result">
+                <p>Hasil PBB adalah: {{ result }}</p>
+                <p>Proses:</p>
+                <ul>
+                    {% for step in process %}
+                        <li>{{ step }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </main>
+</body>
+</html>

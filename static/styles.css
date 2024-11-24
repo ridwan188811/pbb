@@ -1,0 +1,121 @@
+/* Import Font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body dasar */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: #f7f7f7; /* Warna latar belakang */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366; /* Warna biru tua */
+    color: white;
+    text-align: center;
+    padding: 15px; /* Menyesuaikan padding untuk ukuran header yang lebih kecil */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px; /* Ukuran font header lebih kecil */
+}
+
+.branding {
+    font-size: 14px; /* Ukuran kecil untuk branding */
+    color: #b0c4de;
+    margin-top: 10px;
+}
+
+/* Bagian utama */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="number"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #003366; /* Warna biru tua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #0055aa; /* Biru lebih terang saat hover */
+}
+
+/* Tampilan hasil perhitungan */
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.result p {
+    font-size: 18px;
+    color: #333;
+}
+
+.result ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+    color: #444;
+}
+
+.result ul li {
+    padding: 5px;
+}
+
+/* Responsif Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 18px; /* Menyesuaikan ukuran header pada perangkat kecil */
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input[type="number"],
+    form button {
+        width: 100%;
+    }
+}
